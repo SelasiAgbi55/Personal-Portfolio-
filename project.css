@@ -1,0 +1,216 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.project-info {
+    width: 60%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Bullet Points Styling */
+ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Back to Homepage Button */
+.back-home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+/* About Section */
+.footer-about, .footer-links, .footer-social {
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    color: #f4f4f4;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.footer-about p {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 900px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
